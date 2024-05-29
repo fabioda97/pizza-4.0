@@ -1,1 +1,70 @@
-
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza 4.0</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Pizza 4.0</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#ordina">Ordina Online</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="home">
+    <h2>Benvenuti da Pizza 4.0</h2>
+    <p>La migliore pizza della città, con ingredienti freschi e di alta qualità.</p>
+    <img src="pizza.jpg" alt="Pizza deliziosa">
+  </section>
+  
+  <section id="menu">
+    <h2>Il Nostro Menu</h2>
+    <ul>
+      <li>Margherita - €8</li>
+      <li>Diavola - €9</li>
+      <li>Quattro Stagioni - €10</li>
+      <li>Vegetariana - €9</li>
+    </ul>
+  </section>
+  
+  <section id="ordina">
+    <h2>Ordina Online</h2>
+    <form>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="address">Indirizzo:</label>
+      <input type="text" id="address" name="address" required>
+      
+      <label for="pizza">Scegli la tua pizza:</label>
+      <select id="pizza" name="pizza">
+        <option value="margherita">Margherita</option>
+        <option value="diavola">Diavola</option>
+        <option value="quattro-stagioni">Quattro Stagioni</option>
+        <option value="vegetariana">Vegetariana</option>
+      </select>
+      
+      <button type="submit">Ordina</button>
+    </form>
+  </section>
+  
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p>Indirizzo: Via Roma, 123, Milano</p>
+    <p>Telefono: 0123 456 789</p>
+  </section>
+  
+  <div id="chatbot"></div>
+  
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
