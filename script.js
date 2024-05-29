@@ -11,4 +11,3 @@ document.addEventListener('DOMContentLoaded', function() {
     chatbot.classList.toggle('open');
   });
 });
-
