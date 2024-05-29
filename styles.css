@@ -9,7 +9,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  background-color: #1d1d1d; /* Colore dello sfondo che si abbina al logo */
+  background-color: #e74c3c; /* Colore rosso acceso */
   color: #fff;
   padding: 10px 20px;
 }
@@ -130,3 +130,4 @@ form button:hover {
   font-size: 1.5em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
