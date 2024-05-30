@@ -64,18 +64,13 @@
     <p>Telefono: 0123 456 789</p>
   </section>
   
-  <div id="chatbot"></div>
-  <div id="chatbot-icon">💬</div>
-  
-  <!-- Botpress Chatbot Scripts -->
+  <!-- Botpress Chatbot -->
   <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-  <script src="https://mediafiles.botpress.cloud/f7151b45-075a-4317-b8b7-9ee91ca84ed4/webchat/config.js" defer></script>
+  <script>
+    window.botpressWebChat.init({
+      hostUrl: 'https://cdn.botpress.cloud/webchat/v1',
+      botId: 'f7151b45-075a-4317-b8b7-9ee91ca84ed4',
+    });
+  </script>
 </body>
 </html>
-
-  
-  <script src="script.js"></script>
-  <script src="chatbot.js"></script>
-</body>
-</html>
-
