@@ -52,25 +52,44 @@ section {
 }
 
 section#home {
-  background: url('https://via.placeholder.com/1920x1080?text=Background+Image') no-repeat center center;
+  position: relative;
+  background: url('./pizza-margherita.jpg') no-repeat center center;
   background-size: cover;
   color: #fff;
+  overflow: hidden; /* Assicurati che il contenuto non scorra fuori dalla sezione */
+  height: 100vh; /* Assicura che la sezione occupi tutta l'altezza del viewport */
+}
+
+section#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Usa la stessa immagine di sfondo */
+  filter: blur(8px);
+  z-index: 0;
+  opacity: 0.6; /* Riduci l'opacità per renderla meno visibile */
+}
+
+section#home h2,
+section#home p,
+section#home img {
+  position: relative;
+  z-index: 1;
 }
 
 section#home img {
-  width: 50%; /* Riduci la larghezza al 40% */
-  max-width: 400px; /* Riduci la larghezza massima */
+  width: 40%; /* Riduci la larghezza al 40% */
+  max-width: 300px; /* Riduci la larghezza massima */
   border-radius: 10px;
   margin-top: 20px;
 }
 
-
-section#home h2,
-section#home p {
-  color: red;
-}
-
-section#menu, section#ordina, section#contatti {
+section#menu,
+section#ordina,
+section#contatti {
   background-color: #fff;
   border-radius: 10px;
   margin: 20px auto;
@@ -84,12 +103,16 @@ form {
   align-items: center;
 }
 
-form label, form input, form select, form button {
+form label,
+form input,
+form select,
+form button {
   margin: 10px;
   font-size: 1.2em;
 }
 
-form input, form select {
+form input,
+form select {
   padding: 10px;
   width: 80%;
   max-width: 300px;
@@ -135,5 +158,21 @@ form button:hover {
   cursor: pointer;
   font-size: 1.5em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#chatbot-message {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+#chatbot-message.show {
+  display: block;
 }
 
