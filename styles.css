@@ -19,7 +19,7 @@ header {
 }
 
 header .logo {
-  width: 100px;
+  width: 50px; /* Dimensione del logo */
   height: auto;
 }
 
@@ -74,17 +74,9 @@ section#home::before {
 }
 
 section#home h2,
-section#home p,
-section#home img {
+section#home p {
   position: relative;
   z-index: 1;
-}
-
-section#home img {
-  width: 40%; /* Riduci la larghezza al 40% */
-  max-width: 300px; /* Riduci la larghezza massima */
-  border-radius: 10px;
-  margin-top: 20px;
 }
 
 section#menu,
@@ -175,4 +167,3 @@ form button:hover {
 #chatbot-message.show {
   display: block;
 }
-
