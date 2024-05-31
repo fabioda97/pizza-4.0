@@ -77,6 +77,16 @@ section#home h2,
 section#home p {
   position: relative;
   z-index: 1;
+  color: #000; /* Colore del testo nero */
+}
+
+section#home h2 {
+  font-size: 3em; /* Dimensione del testo più grande */
+  margin-bottom: 20px;
+}
+
+section#home p {
+  font-size: 1.5em; /* Dimensione del testo più grande */
 }
 
 section#menu,
